@@ -98,7 +98,9 @@
 <!-- AIQAS Schemes Section -->
   <section class="py-5 bg-light">
     <div class="container" id="aiqas-schemes">
-      <h2 class="section-title text-center mb-5">AIQAS Schemes</h2>
+      <h2 class="section-title text-center mb-4">Our Impact in Action</h2>
+      <h4 class="text-left mb-5"><strong>AIQAS Schemes</strong></h4>
+
       <div class="row g-4">
         <div class="col-lg-4">
           <div class="card h-100">
