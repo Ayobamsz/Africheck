@@ -72,7 +72,7 @@
                     </div>
                 @endif
             </div>
-            <button type="submit" id="submitBtn" @class(['btn', 'btn-primary', 'btn-lg', 'px-5']) disabled>Send Message</button>
+            <button type="submit" id="submitBtn" @class(['btn', 'btn-primary', 'btn-lg', 'px-5']) >Send Message</button>
             </form>
             @if(session('success'))
             <div class="alert alert-success mt-3">

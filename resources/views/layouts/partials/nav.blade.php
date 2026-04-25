@@ -9,16 +9,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Solutions</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Internal Quality Control</a></li>
-              <li><a class="dropdown-item" href="#">External Quality Control</a></li>
-              <li><a class="dropdown-item" href="#">Africheck IQAS</a></li>
-              <li><a class="dropdown-item" href="#">Preventive Health Screening</a></li>
-              <li><a class="dropdown-item" href="#">Molecular & Veterinary QC</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">AIQAS Schemes</a>
             <ul class="dropdown-menu">
@@ -28,7 +19,6 @@
               <li><a class="dropdown-item" href="#">Hematology</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white px-4 ms-3" href="/contact">Contact Us</a></li>
         </ul>

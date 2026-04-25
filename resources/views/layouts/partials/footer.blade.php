@@ -19,7 +19,7 @@
           <p class="text-white-50">info@africheck.com.ng<br>+234 (0) 915 889 2203</p>
            <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
-              <a href="https://wa.link/umwv1o"><i class="fa-brands fa-whatsapp fa-3x text-white"></i></a>
+              <a href="https://wa.link/771jq5"><i class="fa-brands fa-whatsapp fa-3x text-white"></i></a>
             </li>
             <li class="list-inline-item">
               <a href="https://m.me/Segatocoy"><i class="fa-brands fa-facebook-messenger fa-3x text-white"></i></a>
