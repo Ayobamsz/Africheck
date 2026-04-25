@@ -32,6 +32,69 @@
 
 @section('content')
 
+<!-- What We Offer Section -->
+<section class="py-5" id="qsa-services">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">What We Offer</h2>
+    <p class="lead text-center mb-4">Our QSA services help laboratories:</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-search fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Identify Gaps</h5>
+            <p class="card-text">Identify operational and system gaps</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Improve Performance</h5>
+            <p class="card-text">Improve overall performance and efficiency</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Strengthen Systems</h5>
+            <p class="card-text">Strengthen internal quality management systems</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Build Culture</h5>
+            <p class="card-text">Build a culture of continuous improvement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why QSA Matters Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Why QSA Matters</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <p class="lead text-center mb-4">Regular Quality System Assessments are critical because:</p>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Even a single weak point can impact overall performance</li>
+          <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Undetected gaps can lead to inaccurate results</li>
+          <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Inefficiencies can reduce productivity and reliability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- AIQAS Schemes Section -->
   <section class="py-5 bg-light">
     <div class="container" id="aiqas-schemes">
@@ -102,47 +165,21 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center mb-5">Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5>Contract QC Manufacturing</h5>
-              <p>Your trusted partner for custom quality control materials and diagnostic solutions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5>Pathology & Testing Support</h5>
-              <p>Comprehensive laboratory quality assurance with fast, reliable results across Africa.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5>Genomics & Life Sciences</h5>
-              <p>End-to-end quality control for molecular diagnostics, research and biopharma applications.</p>
-            </div>
-          </div>
-        </div>
+<!-- Our Philosophy Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our Philosophy</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <p class="lead">At AfriCheck, we believe:</p>
+        <blockquote class="blockquote">
+          <p class="mb-0 fw-bold">"Quality is not an act—it’s a culture."</p>
+        </blockquote>
+        <p>It's something you practice every single day, embedded into every process and decision.</p>
       </div>
     </div>
-  </section>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/2348031234567?text=Hello%20Africheck%2C%20I%20would%20like%20to%20know%20more%20about%20your%20Quality%20Control%20solutions." 
-     class="whatsapp-float" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     title="Chat with us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  </div>
+</section>
 
   <!-- Mission / Closing Section -->
   <section class="py-5 bg-primary text-white text-center">
