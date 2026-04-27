@@ -1,5 +1,6 @@
 :root {
-    --primary: #04a38c; /*#015347*/
+    --primary: #04a38c;
+    /*#015347*/
     --primary-dark: #003d33;
     --primary-hover: #026d5e;
     --bg-primary:
@@ -21,11 +22,11 @@ body {
 }
 
 .hero {
-    height: 60vh;
+    /*height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/random/1920x1080/?laboratory,clinical') center/cover no-repeat;
     display: flex;
     align-items: center;
-    color: white;
+    color: white; */
 }
 
 .section-title {
@@ -88,4 +89,33 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 100%;
     height: auto;
+}
+
+/* Carousel Caption Styles */
+.carousel-caption-top-left {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    right: auto;
+    bottom: auto;
+    text-align: left;
+    max-width: 400px;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption-top-left {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+        text-align: center;
+    }
+
+    .carousel-caption-top-left h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption-top-left p {
+        font-size: 1rem;
+    }
 }

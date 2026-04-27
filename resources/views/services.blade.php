@@ -1,5 +1,24 @@
 @extends('layouts.app')
 
+@section('title')
+Services - Quality System Assessments and QC Solutions for Laboratories
+@endsection
+
+@section('meta')
+<meta name="description" content="Explore AfriCheck's comprehensive services including Quality System Assessments (QSA), interlaboratory QC programs, and tailored solutions for clinical, research, and veterinary laboratories.">
+<meta name="keywords" content="laboratory services, quality system assessment, QSA services, QC programs, clinical lab services, interlaboratory comparison, lab quality solutions">
+<meta name="author" content="AfriCheck">
+<meta property="og:title" content="Services - Quality System Assessments and QC Solutions for Laboratories">
+<meta property="og:description" content="Explore AfriCheck's comprehensive services including Quality System Assessments (QSA), interlaboratory QC programs, and tailored solutions for clinical, research, and veterinary laboratories.">
+<meta property="og:image" content="{{ asset('images/africheck_heam.jpg') }}">
+<meta property="og:url" content="{{ url('/services') }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Services - Quality System Assessments and QC Solutions for Laboratories">
+<meta name="twitter:description" content="Explore AfriCheck's comprehensive services including Quality System Assessments (QSA), interlaboratory QC programs, and tailored solutions for clinical, research, and veterinary laboratories.">
+<meta name="twitter:image" content="{{ asset('images/africheck_heam.jpg') }}">
+@endsection
+
 @section('content')
 <style>
 @keyframes fadeInUp {

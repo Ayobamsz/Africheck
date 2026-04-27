@@ -38,6 +38,10 @@ class PageController extends Controller
     {
         return view('resources');
     }
+    public function blog()
+    {
+        return view('home');
+    }
 
     public function store(Request $request)
     {

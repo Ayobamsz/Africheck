@@ -1,4 +1,23 @@
-@extends('layouts.app') 
+@extends('layouts.app')
+
+@section('title')
+Contact AfriCheck - Get in Touch for Laboratory Quality Solutions
+@endsection
+
+@section('meta')
+<meta name="description" content="Contact AfriCheck for expert laboratory quality control solutions. Reach out to our team for Quality System Assessments, QC programs, and support for clinical laboratories worldwide.">
+<meta name="keywords" content="contact AfriCheck, laboratory quality control, QSA booking, QC support, clinical labs contact, lab quality experts">
+<meta name="author" content="AfriCheck">
+<meta property="og:title" content="Contact AfriCheck - Get in Touch for Laboratory Quality Solutions">
+<meta property="og:description" content="Contact AfriCheck for expert laboratory quality control solutions. Reach out to our team for Quality System Assessments, QC programs, and support for clinical laboratories worldwide.">
+<meta property="og:image" content="{{ asset('images/africheck_heam.jpg') }}">
+<meta property="og:url" content="{{ url('/contact') }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact AfriCheck - Get in Touch for Laboratory Quality Solutions">
+<meta name="twitter:description" content="Contact AfriCheck for expert laboratory quality control solutions. Reach out to our team for Quality System Assessments, QC programs, and support for clinical laboratories worldwide.">
+<meta name="twitter:image" content="{{ asset('images/africheck_heam.jpg') }}">
+@endsection
 
 @section('hero')
 <!-- Hero Section -->
@@ -160,7 +179,7 @@
         <div @class(['container'])>
         <h2 @class(['display-6', 'fw-bold'])>Ready to Improve Your Laboratory Quality?</h2>
         <p @class(['lead', 'mt-3'])>Join thousands of laboratories across Africa and beyond who trust Africheck for reliable Quality Control.</p>
-        <a href="/services" @class(['btn', 'btn-light', 'btn-lg', 'mt-3'])>Explore Our Solutions</a>
+        <a href="{{ route('services') }}" @class(['btn', 'btn-light', 'btn-lg', 'mt-3'])>Explore Our Solutions</a>
         </div>
     </section>
 

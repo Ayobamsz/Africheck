@@ -10,3 +10,4 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::post('/contact', [PageController::class, 'store'])->name('contact.store');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/resources', [PageController::class, 'resources'])->name('resources');
+Route::get('/blog', [PageController::class, 'blog'])->name('blog');

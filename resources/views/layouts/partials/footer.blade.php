@@ -9,9 +9,9 @@
         <div class="col-md-4">
           <h6>Quick Links</h6>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white-50">Solutions</a></li>
-            <li><a href="/#aiqas-schemes" class="text-white-50">AIQAS Schemes</a></li>
-            <li><a href="#" class="text-white-50">Services</a></li>
+            <li><a href="{{ route('services') }}" class="text-white-50">Services</a></li>
+            <li><a href="{{ route('home') }}#aiqas-schemes" class="text-white-50">AIQAS Schemes</a></li>
+            <li><a href="{{ route('resources') }}" class="text-white-50">Resources</a></li>
           </ul>
         </div>
         <div class="col-md-4">

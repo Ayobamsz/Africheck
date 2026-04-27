@@ -1,5 +1,24 @@
 @extends('layouts.app')
 
+@section('title')
+About AfriCheck - Leaders in Laboratory Quality Control
+@endsection
+
+@section('meta')
+<meta name="description" content="Learn about AfriCheck, a leader in laboratory quality control solutions. Discover our mission to improve clinical laboratory results worldwide through innovative QC programs and expert assessments.">
+<meta name="keywords" content="about AfriCheck, laboratory quality control, clinical labs, QC solutions, lab quality assurance, medical diagnostics">
+<meta name="author" content="AfriCheck">
+<meta property="og:title" content="About AfriCheck - Leaders in Laboratory Quality Control">
+<meta property="og:description" content="Learn about AfriCheck, a leader in laboratory quality control solutions. Discover our mission to improve clinical laboratory results worldwide through innovative QC programs and expert assessments.">
+<meta property="og:image" content="{{ asset('images/africheck_heam.jpg') }}">
+<meta property="og:url" content="{{ url('/about') }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About AfriCheck - Leaders in Laboratory Quality Control">
+<meta name="twitter:description" content="Learn about AfriCheck, a leader in laboratory quality control solutions. Discover our mission to improve clinical laboratory results worldwide through innovative QC programs and expert assessments.">
+<meta name="twitter:image" content="{{ asset('images/africheck_heam.jpg') }}">
+@endsection
+
 @section('content')
 <!-- About Hero Section -->
 <section class="hero bg-primary text-white py-5">

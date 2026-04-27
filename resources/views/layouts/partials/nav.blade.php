@@ -20,6 +20,7 @@
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://iqas.africheck.com.ng" target="_blank">AIQAS Web Portal</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white px-4 ms-3" href="/contact">Contact Us</a></li>
         </ul>
       </div>

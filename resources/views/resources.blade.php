@@ -1,5 +1,24 @@
 @extends('layouts.app')
 
+@section('title')
+Resources - Expert Guides and Tools for Laboratory Quality Control
+@endsection
+
+@section('meta')
+<meta name="description" content="Access expert resources from AfriCheck including guides on internal quality control, IQC selection, and practical tools for improving laboratory quality management and compliance.">
+<meta name="keywords" content="laboratory resources, quality control guides, IQC implementation, lab quality tools, clinical laboratory resources, quality assurance downloads">
+<meta name="author" content="AfriCheck">
+<meta property="og:title" content="Resources - Expert Guides and Tools for Laboratory Quality Control">
+<meta property="og:description" content="Access expert resources from AfriCheck including guides on internal quality control, IQC selection, and practical tools for improving laboratory quality management and compliance.">
+<meta property="og:image" content="{{ asset('images/africheck_heam.jpg') }}">
+<meta property="og:url" content="{{ url('/resources') }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Resources - Expert Guides and Tools for Laboratory Quality Control">
+<meta name="twitter:description" content="Access expert resources from AfriCheck including guides on internal quality control, IQC selection, and practical tools for improving laboratory quality management and compliance.">
+<meta name="twitter:image" content="{{ asset('images/africheck_heam.jpg') }}">
+@endsection
+
 @section('content')
 <style>
 @keyframes fadeInUp {
