@@ -84,12 +84,16 @@ Contact AfriCheck - Get in Touch for Laboratory Quality Solutions
                 <textarea name="message" @class(['form-control']) rows="6" placeholder="How can we help your laboratory?" required>{{ old('message') }}</textarea>
             </div>
             <div @class(['mb-4'])>
-                <div class="h-captcha" data-sitekey="{{ config('services.hcaptcha.site_key') }}" data-callback="onHcaptchaSubmit"></div>
-                @if($errors->has('captcha') || $errors->has('h-captcha-response'))
+                <label @class(['form-label'])>Security Challenge</label>
+                <div @class(['alert', 'alert-info', 'mb-3'])>
+                    <strong>Question:</strong> {{ $question }}
+                </div>
+                <input type="text" name="security_answer" @class(['form-control']) placeholder="Your answer" required>
+                @error('security_answer')
                     <div class="invalid-feedback d-block">
-                        {{ $errors->first('captcha') ?: $errors->first('h-captcha-response') }}
+                        {{ $message }}
                     </div>
-                @endif
+                @enderror
             </div>
             <button type="submit" id="submitBtn" @class(['btn', 'btn-primary', 'btn-lg', 'px-5']) >Send Message</button>
             </form>
@@ -123,8 +127,8 @@ Contact AfriCheck - Get in Touch for Laboratory Quality Solutions
                 <div>
                 <h5>Phone</h5>
                 <p @class(['mb-0', 'text-muted'])>
-                    +234 915 889 2203<br>
-                    +234 803 701 3217
+                    <a href="tel:+2349158892203">+234 915 889 2203</a><br>
+                    <a href="tel:+2348037013217">+234 803 701 3217</a>
                 </p>
                 </div>
             </div>
@@ -136,8 +140,8 @@ Contact AfriCheck - Get in Touch for Laboratory Quality Solutions
                 <div>
                 <h5>Email</h5>
                 <p @class(['mb-0', 'text-muted'])>
-                    info@africheck.com.ng<br>
-                    accounts@africheck.com.ng
+                    <a href="mailto:info@africheck.com.ng">info@africheck.com.ng</a><br>
+                    <a href="mailto:accounts@africheck.com.ng">accounts@africheck.com.ng</a>
                 </p>
                 </div>
             </div>
@@ -161,7 +165,7 @@ Contact AfriCheck - Get in Touch for Laboratory Quality Solutions
             <h5 @class(['mb-3'])>Our Location</h5>
             <div @class(['ratio', 'ratio-16x9', 'bg-light', 'rounded', 'overflow-hidden'])>
                 <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.123456789!2d3.379!3d6.524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2b2b2b2b2b%3A0x1234567890abcdef!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1234567890" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15761.888606700142!2d7.452120754408239!3d9.020620695245496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0dfa6260bc1f%3A0x52d45e073c08d0b3!2sDurumi%201%20Abuja!5e0!3m2!1sen!2sca!4v1777326342172!5m2!1sen!2sca"
                 width="100%" 
                 height="250" 
                 style="border:0;" 
@@ -187,26 +191,26 @@ Contact AfriCheck - Get in Touch for Laboratory Quality Solutions
 
 @section('footer-scripts')
   <script>
-    function onHcaptchaSubmit(token) {
-      console.log('hCaptcha completed with token:', token);
-      document.getElementById('submitBtn').disabled = false;
-    }
-
-    // Enable submit button when hCaptcha loads
+    // Enable submit button and allow form submission
     document.addEventListener('DOMContentLoaded', function() {
-      console.log('DOM loaded, checking hCaptcha...');
-      if (typeof hcaptcha !== 'undefined') {
-        console.log('hCaptcha object found');
-        hcaptcha.onLoad(function() {
-          console.log('hCaptcha loaded successfully');
-          document.getElementById('submitBtn').disabled = false;
+      const submitBtn = document.getElementById('submitBtn');
+      const securityAnswerInput = document.querySelector('input[name="security_answer"]');
+      
+      // Enable button by default
+      if (submitBtn) {
+        submitBtn.disabled = false;
+      }
+      
+      // Optional: validate that answer field is not empty before submission
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          if (!securityAnswerInput.value.trim()) {
+            e.preventDefault();
+            alert('Please answer the security question before submitting.');
+            securityAnswerInput.focus();
+          }
         });
-      } else {
-        console.log('hCaptcha object not found, enabling button after delay');
-        // Fallback: enable after a delay
-        setTimeout(function() {
-          document.getElementById('submitBtn').disabled = false;
-        }, 3000);
       }
     });
   </script>

@@ -32,7 +32,7 @@ AfriCheck - Quality System Assessments for Laboratories
             <h1 class="h2">Strengthen Your Laboratory Beyond Equipment and Personnel</h1>
             <p class="lead fs-5 mb-3">Discover how Quality System Assessments (QSA) can transform your lab operations and ensure consistent, high-quality results.</p>
             <div class="d-flex flex-column flex-sm-row gap-2">
-              <a href="{{ route('services') }}" class="btn btn-primary btn-lg px-4 py-2 shadow">Explore Solutions</a>
+              <a href="{{ route('services') }}" class="btn btn-primary btn-lg shadow">Explore Solutions</a>
               <a href="#" class="btn btn-outline-light btn-lg px-4 py-2 shadow" data-bs-toggle="modal" data-bs-target="#promoVideoModal">Watch Video</a>
             </div>
           </div>
@@ -43,7 +43,7 @@ AfriCheck - Quality System Assessments for Laboratories
             <h1 class="h2">Strengthen Your Laboratory Beyond Equipment and Personnel</h1>
             <p class="lead fs-5 mb-3">Discover how Quality System Assessments (QSA) can transform your lab operations and ensure consistent, high-quality results.</p>
             <div class="d-flex flex-column flex-sm-row gap-2">
-              <a href="{{ route('services') }}" class="btn btn-primary btn-lg px-4 py-2 shadow">Explore Solutions</a>
+              <a href="{{ route('services') }}" class="btn btn-primary btn-lg shadow">Explore Solutions</a>
               <a href="#" class="btn btn-outline-light btn-lg px-4 py-2 shadow" data-bs-toggle="modal" data-bs-target="#promoVideoModal">Watch Video</a>
             </div>
           </div>
@@ -80,11 +80,11 @@ AfriCheck - Quality System Assessments for Laboratories
   </section>
 
   <!-- Promotional Video Modal -->
-  <!--div @class(['modal', 'fade']) id="promoVideoModal" tabindex="-1" aria-labelledby="promoVideoModalLabel" aria-hidden="true">
+  <div @class(['modal', 'fade']) id="promoVideoModal" tabindex="-1" aria-labelledby="promoVideoModalLabel" aria-hidden="true">
     <div @class(['modal-dialog', 'modal-lg'])>
       <div @class(['modal-content'])>
         <div @class(['modal-header'])>
-          <h5 @class(['modal-title']) id="promoVideoModalLabel">Africheck Promotional Video</h5>
+          <h5 @class(['modal-title']) id="promoVideoModalLabel">AFRICHECK Video</h5>
           <button type="button" @class(['btn-close']) data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div @class(['modal-body', 'text-center'])>
@@ -95,7 +95,7 @@ AfriCheck - Quality System Assessments for Laboratories
         </div>
       </div>
     </div>
-  </div-->
+  </div>
 @endsection
 
 @section('content')

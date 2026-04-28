@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Http;
+use App\Helpers\SecurityQuestions;
 
 class PageController extends Controller
 {
@@ -26,7 +27,9 @@ class PageController extends Controller
 
     public function contact()
     {
-        return view('contact');
+        $questionData = SecurityQuestions::getRandomQuestion();
+        session(['security_question_index' => $questionData['index']]);
+        return view('contact', ['question' => $questionData['question']]);
     }
 
     public function services()
@@ -52,19 +55,17 @@ class PageController extends Controller
             'phone' => 'nullable|string|max:20',
             'subject' => 'required|string|max:255',
             'message' => 'required|string',
-            'h-captcha-response' => 'required|string',
+            'security_answer' => 'required|string',
         ]);
 
-        $verification = Http::asForm()->post('https://hcaptcha.com/siteverify', [
-            'secret' => config('services.hcaptcha.secret'),
-            'response' => $request->input('h-captcha-response'),
-            'remoteip' => $request->ip(),
-        ]);
+        // Verify the security question answer
+        $questionIndex = session('security_question_index');
+        $userAnswer = $request->input('security_answer');
 
-        if (!$verification->ok() || !data_get($verification->json(), 'success')) {
+        if (!SecurityQuestions::verifyAnswer($questionIndex, $userAnswer)) {
             return back()
                 ->withInput()
-                ->withErrors(['captcha' => 'Please complete the hCaptcha challenge correctly.']);
+                ->withErrors(['security_answer' => 'Your answer to the security question is incorrect. Please try again.']);
         }
 
         $contact = Contact::create($request->only([
@@ -81,6 +82,9 @@ class PageController extends Controller
                     ->subject('New Contact Form Submission: ' . $request->subject)
                     ->from($request->email, $request->first_name . ' ' . $request->last_name);
         });
+
+        // Clear the session question
+        session()->forget('security_question_index');
 
         return back()->with('success', 'Your message has been sent successfully!');
     }

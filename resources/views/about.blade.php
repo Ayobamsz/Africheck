@@ -22,8 +22,8 @@ About AfriCheck - Leaders in Laboratory Quality Control
 @section('content')
 <!-- About Hero Section -->
 <section class="hero bg-primary text-white py-5">
-  <div class="container text-center">
-    <h1 class="display-4 fw-bold">About Africheck</h1>
+  <div class="container text-center mt-5">
+    <h1 class="display-4 fw-bold animate-fade-in">About Africheck</h1>
     <p class="lead">Dedicated to Improving Quality of Clinical Laboratory Results Worldwide</p>
   </div>
 </section>

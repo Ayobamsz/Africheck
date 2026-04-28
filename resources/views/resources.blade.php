@@ -21,37 +21,12 @@ Resources - Expert Guides and Tools for Laboratory Quality Control
 
 @section('content')
 <style>
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.animate-fade-in {
-  animation: fadeInUp 0.8s ease-out;
-}
-.resource-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.resource-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-.cta-button {
-  transition: all 0.3s ease;
-}
-.cta-button:hover {
-  transform: scale(1.05);
-}
+
 </style>
 
 <!-- Resources Hero Section -->
 <section class="hero bg-primary text-white py-5 animate-fade-in">
-  <div class="container text-center">
+  <div class="container text-center mt-5">
     <h1 class="display-4 fw-bold">Resources</h1>
     <p class="lead">Tools and guides to enhance your laboratory quality systems</p>
   </div>
